@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+         
+        <form id="contact" action="" method="post">
+          <h3 style="text-align: center;">Fake Job Predictor</h3>
+          <h4 style="text-align: center;"> Enter Job Description (Leave Empty space if details unknown,&nbsp&nbsp(*) means Required)</h4>
+          <h2 style="text-align: center;">{{prediction}}</h2> 
+          <fieldset>
+            <input placeholder="Title (*)" type="text" name="text1" tabindex="1" required autofocus>
+            <input placeholder="Location(Enter Country Name) (*)" type="text" name="text2" tabindex="1" required  autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Department" type="text" name="text30" tabindex="1"  autofocus>
+            <input placeholder="salary Range" type="text" name="text31" tabindex="1"  autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Company Profile (*)" type="text" name="text3" tabindex="1" required autofocus>
+            <input placeholder="Description (*)" type="text" name="text4" tabindex="1"  required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Requirements (*)" type="text" name="text5" tabindex="1" required autofocus>
+            <input placeholder="Benefits (*)" type="text" name="text6" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Telecommuting (Yes/No)" type="text" name="text40" tabindex="1"  autofocus>
+            <input placeholder="Has company logo (Yes/No)" type="text" name="text41" tabindex="1"  autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Has Questions(Yes/No)" type="text" name="text11" tabindex="1"  autofocus>
+            <input placeholder="Employment Type" type="text" name="text12" tabindex="1"  autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Required Experience(In Years)" type="text" name="text13" tabindex="1"  autofocus>
+            <input placeholder="Required Education" type="text" name="text14" tabindex="1"  autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Industry (*)" type="text" name="text7" tabindex="1" required autofocus>
+            <input placeholder="Function" type="text" name="text16" tabindex="1" autofocus>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+          </fieldset>
+          
+        </form>
+      </div>
+</body>
+</html>
